@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import requests, sys, time, urllib.parse
+import requests, sys, time, urllib.parse, signal
 from bs4 import BeautifulSoup
 
 cookie = {
@@ -38,9 +38,15 @@ def getOrderId(orderToken):
 		print('getOrderId Failed: {}\n{}'.format(repr(e), r.text))
 		sys.exit(-1)
 
+def signal_handler(signal, frame):
+	if (ppname == 'cmd.exe'):
+		print()
+	sys.exit()
+signal.signal(signal.SIGINT, signal_handler)
+
 def main():
 	if len(sys.argv) < 5:
-		print('Usage: oktix.py [Event] [Ticket ID] [Tiket Quantity] [Sleep Seconds]')
+		print('Usage: python3 oktix.py [Event] [Ticket ID] [Ticket Quantity] [Sleep Seconds]')
 		sys.exit(-1)
 
 	event = sys.argv[1]
