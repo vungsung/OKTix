@@ -11,7 +11,9 @@ cookie = {
 }
 ```
 3. 參數說明:
+```
 Event: 活動名稱 (可透過url取得) e.g. sitcon2020
 Ticket ID: 票卷資訊ID (可透過F12取得) e.g. 234871
 Ticket Quantity: 票卷數量 e.g. 1
 Sleep Seconds: 失敗後嘗試等待秒數 e.g. 1.5
+```
