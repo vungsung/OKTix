@@ -1,5 +1,5 @@
 ### 請記得自行填入自己的KKTix Cookie~
-#### `Usage: python3 oktix.py [Event] [Ticket ID] [Tiket Quantity] [Sleep Seconds]`
+#### `Usage: python3 oktix.py [Event] [Ticket ID] [Ticket Quantity] [Sleep Seconds]`
 ![](https://github.com/vungsung/OkTix/blob/master/running.png)
 
 - 只支援 Python 3
