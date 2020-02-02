@@ -3,7 +3,7 @@
 ![](https://github.com/vungsung/OkTix/blob/master/running.png)
 
 - 只支援 Python 3
-- PIPy模組: `pip3 install requests bs4`
+- PIPy模組: `pip3 install requests bs4 urllib3`
 - Cookie驗證，需在原始碼填入Cookie
 ```
 cookie = {
