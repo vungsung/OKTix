@@ -39,8 +39,6 @@ def getOrderId(orderToken):
 		sys.exit(-1)
 
 def signal_handler(signal, frame):
-	if (ppname == 'cmd.exe'):
-		print()
 	sys.exit()
 signal.signal(signal.SIGINT, signal_handler)
 
